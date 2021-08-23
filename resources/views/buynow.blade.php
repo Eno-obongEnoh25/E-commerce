@@ -28,7 +28,7 @@
     </table>
 
     <h3>Payment Method</h3>
-    <form action="{{ route('buynow') }}" method="Post">
+    <form action="/buynow" method="Post">
         @csrf
         <div class="form-group">
             <textarea name="address" class="form-control" id="" placeholder="Enter Your Address" cols="100" rows="3"></textarea>

@@ -31,7 +31,7 @@
                         <a href="{{ route('buynow') }}"><button class="btn btn-success">Buy Now</button></a>
                     </td> --}}
                     <td>
-                        <form action="{{ route('cart.destroy', $cart->carts_id) }}" method="Post">
+                        <form action="{{ '/cart.destroy'. $cart->carts_id }}" method="Post">
                             @csrf
                             @method('DELETE')
                             <button class="btn btn-warning" type="submit" style="width: 5rem;">Remove from cart</button>

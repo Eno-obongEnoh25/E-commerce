@@ -23,7 +23,7 @@
 
 <div class="container jumbotron text-center mt-3" style="width: 50%">
     <h3>Create Item</h3>
-    <form action="{{ route('admindashboard') }}" method="Post" enctype="multipart/form-data">
+    <form action="/admindashboard" method="Post" enctype="multipart/form-data">
         @csrf
          <input type="text" class="form-control w-full"
          name="name" placeholder=" Input Name of item" id="" value="{{old('name')}}">  <br><br>
@@ -47,7 +47,7 @@
         <button type="submit" class="btn btn-primary border-0 px-4 text-light w-full p-2 border-0 rounded-pill">Submit Post</button>
     </form>
 
-    <a href="{{ route('welcome') }}"><h4>Go to welcome page</h4></a>
+    <a href="/welcome"><h4>Go to welcome page</h4></a>
 
 </div>
 

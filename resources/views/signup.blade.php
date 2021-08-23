@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container jumbotron text-center mt-3" style="width: 50%">
-    <form action="{{ route('signup') }}" method="Post">
+    <form action="/signup" method="Post">
         @csrf
         <div class="text-center">
             <div>

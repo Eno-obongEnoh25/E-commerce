@@ -9,7 +9,7 @@
 @endif
 
 <div class="container jumbotron text-center mt-2" style="width: 50%">
-    <form action="{{ route('login') }}" method="Post">
+    <form action="/login" method="Post">
         @csrf
         <div>
             <input type="text" name="email" id=""
